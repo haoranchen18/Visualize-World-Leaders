@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Political Leaders</title>
+    <link rel="icon" href="data:;base64,iVBORwOKGO=" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Political Leaders</h1>
+
+    Filter Countries: 
+    <select id="country-selector" value = "oecd">
+        <option value="oecd">OECD</option>
+        <option value="eu27">EU27</option>
+        <option value="brics">BRICS</option>
+        <option value="gseven">G7</option>
+        <option value="gtwenty">G20 (without EU)</option>
+    </select>
+    
+    <!-- todo: add visualizations -->
+    <div id="viz">
+        <svg id="lexis">
+            <defs>
+                <defs>
+                    <marker id="arrow-head-purple" viewBox="0 0 10 10" refX="2" refY="2" markerWidth="6" markerHeight="6"
+                            orient="auto" markerUnits="strokeWidth" stroke="#a4a5c2" fill='none'>
+                        <path d="M 0 0 L 2 2 L 0 4 " />
+                    </marker>
+                    <marker id="arrow-head-gray" viewBox="0 0 10 10" refX="2" refY="2" markerWidth="6" markerHeight="6"
+                            orient="auto" markerUnits="strokeWidth" stroke="gray" fill='none'>
+                        <path d="M 0 0 L 2 2 L 0 4 " />
+                    </marker>
+                    <marker id="arrow-head-orange" viewBox="0 0 10 10" refX="2" refY="2" markerWidth="6" markerHeight="6"
+                            orient="auto" markerUnits="strokeWidth" stroke="orange" fill='none'>
+                        <path d="M 0 0 L 2 2 L 0 4 " />
+                    </marker>
+                </defs>
+            </defs>
+        </svg>
+
+        <div>
+            <svg id="bar"></svg>
+
+            <svg id="scatter"> </svg>
+        </div>
+    </div>
+    
+    <script src="js/d3.v6.min.js"></script>
+    <script src="js/lexisChart.js"></script>
+    <script src="js/barChart.js"></script>
+    <script src="js/scatterPlot.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

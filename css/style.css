@@ -1,0 +1,23 @@
+/* Todo: add styles */
+
+rect:hover {
+    stroke: black;
+    opacity: 1;
+}
+
+circle:hover {
+    stroke: black;
+    opacity: 1;
+}
+
+.arrowLine:hover {
+    stroke-width: 8px;
+}
+
+.label {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-label {
+    font-weight: bold;
+}
